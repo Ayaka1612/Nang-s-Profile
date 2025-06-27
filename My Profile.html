@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Profile</title>
+  <style>
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f9;
+  color: #333;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  background: #4a90e2;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 3px solid white;
+}
+.intro {
+  margin: 8px 0;
+}
+.tabs {
+  margin-top: 20px;
+}
+.tabs input {
+  display: none;
+}
+.tabs label {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ddd;
+  margin-right: -4px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+.tabs input:checked + label {
+  background: #4a90e2;
+  color: white;
+}
+.content {
+  display: none;
+  background: white;
+  padding: 20px;
+  border-radius: 0 5px 5px 5px;
+  border: 1px solid #ddd;
+}
+#tab-about:checked ~ .content-about,
+#tab-history:checked ~ .content-history,
+#tab-contact:checked ~ .content-contact {
+  display: block;
+}
+.content h2 {
+  margin-top: 0;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>THAI SAMNANG</h1>
+      <p class="intro">Welcome to my profile</p>
+      <img src="nang.jpg" alt="SAMNANG" class="profile-pic" />
+    </header>
+    <div class="tabs">
+      <input type="radio" name="tab" id="tab-about" checked>
+      <label for="tab-about">About Me</label>
+       <input type="radio" name="tab" id="tab-history">
+      <label for="tab-history">History</label>
+      <input type="radio" name="tab" id="tab-contact">
+      <label for="tab-contact">Contact</label>
+      <div class="content content-about">
+        <h2>About Me</h2>
+        <p>My name is Samnang . you can call me Bee. I am a student at grade 10.</p>
+      </div>
+      <div class="content content-history">
+        <h2> Study</h2>
+        <p>Now I am studying at New Generation School Prek Leap. I study at grade    10P-1. In the past I studied at Primary school Nak Oknha Morha Pheakdey Hun Neang Bakkheng. I like math and khmer.</p>
+      </div>
+      <div class="content content-contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="samnangthai158@gmail.com">samnangthai158@gmail.com</a><br>
+		Phone Number 069507781<br>
+		Telegram @Thai_Samnang<br>
+		Facebook Sam Nang</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
